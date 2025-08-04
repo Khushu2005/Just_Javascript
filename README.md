@@ -9,7 +9,6 @@ Welcome to **Just_Javascript** — my personal space for consistent, hands-on Ja
 
 ## 📁 Folder Structure
 - Regular_Expression/
-  - index.html
   - password_validation.js
   - username_validation.js
 
