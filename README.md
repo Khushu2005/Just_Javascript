@@ -9,6 +9,9 @@ Welcome to **Just_Javascript** — my personal space for consistent, hands-on Ja
 
 ## 📁 Folder Structure
 - Regular_Expression/
+  - Basic.js.js
+  - assertion.js
+  - Quantifiers.js
   - password_validation.js
   - username_validation.js
 
