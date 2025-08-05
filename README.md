@@ -14,6 +14,7 @@ Welcome to **Just_Javascript** — my personal space for consistent, hands-on Ja
   - Quantifiers.js
   - password_validation.js
   - username_validation.js
+  - Email_validation.js
 
 
 ## 🎯 Goals of This Repo
