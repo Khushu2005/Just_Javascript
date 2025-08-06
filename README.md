@@ -15,6 +15,7 @@ Welcome to **Just_Javascript** — my personal space for consistent, hands-on Ja
   - password_validation.js
   - username_validation.js
   - Email_validation.js
+  - phone_number_validation.js
 
 
 ## 🎯 Goals of This Repo
