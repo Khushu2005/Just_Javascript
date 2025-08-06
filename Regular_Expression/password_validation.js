@@ -16,7 +16,7 @@ const passwords = [
 let random = Math.floor(Math.random() * passwords.length)
 let pass = passwords[random]
 if (pass.length >= 8) {
-    if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$/
+    if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$/.test(pass)
 ) {
         console.log(pass);
 
