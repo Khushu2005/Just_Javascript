@@ -1,7 +1,15 @@
-bubble sort
+Algorithm	   Stability	In-Place
+SelectionSort  Not stable	 Yes
+MergeSort	   Stable	     No
+BubbleSort	   Stable	     Yes
+
+Bubble Sort → Teaching & nearly sorted arrays
+Selection Sort → Jab swaps costly ho aur data chhota ho
+Merge Sort → Large datasets, linked lists, external sorting, stable sorting
+
+
+Bubble Sort
 // DEF: Bubble Sort repeatedly compares adjacent elements in an array and swaps them if they are in the wrong order. After each pass, the largest element “bubbles” to the end.
-
-
 
 // CONCEPT: Bubble sort is a simple comparison-based sorting algorithm. It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
 
@@ -111,3 +119,27 @@ selection sort
 // Agar minimum 3 ko pick karke 4(1) ke sath swap kar diya, toh equal 4 elements ka relative order change ho gaya.
 // 👉 Isliye by default Selection Sort stable nahi hota.
 
+Merge Sort ->
+
+//Definition
+Merge Sort ek Divide & Conquer algorithm hai.
+Array ko bar-bar do halves me todta hai, aur fir sorted halves ko merge karta hai.
+
+
+2. Working (Steps)
+
+👉 Example: [8, 5, 2, 7, 1]
+Divide: [8, 5, 2] + [7, 1]
+Divide again: [8,5] + [2] , [7] + [1]
+Conquer (merge): [8,5] → [5,8]
+Merge: [5,8] + [2] → [2,5,8]
+Merge: [7] + [1] → [1,7]
+Merge: [2,5,8] + [1,7] → [1,2,5,7,8]
+
+
+// Interview Keywords (Bolne ke liye ready rakho)
+“Merge Sort ek divide and conquer algorithm hai.”
+“Time complexity hamesha O(n log n) hai – best, worst, average sab case me.”
+“Stable hai but in-place nahi hai (O(n) extra space lagta hai).”
+“Large datasets aur linked lists me useful hai.”
+“Swaps kam hote hain, lekin memory overhead zyada hai.”
