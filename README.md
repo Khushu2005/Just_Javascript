@@ -8,14 +8,21 @@ Welcome to **Just_Javascript** — my personal space for consistent, hands-on Ja
 ---
 
 ## 📁 Folder Structure
+- Increment-Decrement/
+  - Inc-Dec.js
 - Regular_Expression/
-  - Basic.js.js
+  - Basic.js
   - assertion.js
   - Quantifiers.js
   - password_validation.js
   - username_validation.js
   - Email_validation.js
   - phone_number_validation.js
+- Sorting/
+  - Bubble_Sort.js
+  - MergeSorting.js
+  - Selection_Sort.js
+   
 
 
 ## 🎯 Goals of This Repo
