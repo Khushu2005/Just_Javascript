@@ -1,20 +1,32 @@
 // DEF: Bubble Sort repeatedly compares adjacent elements in an array and swaps them if they are in the wrong order. After each pass, the largest element “bubbles” to the end.
 
-
-function optimizedBubbleSort(arr) {
+function BubbleSort(arr) {
   let n = arr.length;
+
   for (let i = 0; i < n - 1; i++) {
     let swapped = false;
     for (let j = 0; j < n - i - 1; j++) {
       if (arr[j] > arr[j + 1]) {
-        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]; // ES6 swap
-        swapped = true;
+        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+        swapped = true
+
       }
     }
-    if (swapped == false) break; // stop if no swaps
+    if (swapped == false) {
+      console.log("no swap");
+      break;
+
+    }
+
   }
-  return arr;
+  return arr
 }
+console.log(BubbleSort([0, 1, 2, 3, 8])
+);
+
+
+
+
 
 
 // CONCEPT: Bubble sort is a simple comparison-based sorting algorithm. It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
@@ -27,7 +39,7 @@ function optimizedBubbleSort(arr) {
 // After each full pass, the largest unsorted element "bubbles up" to its correct position.
 // Repeat the process until no swaps are needed (the list is sorted).
 
-// TIME COMPLEXITY : 
+// TIME COMPLEXITY :
 // Best Case: O(n) - When the array is already sorted (only one pass needed).
 // Average Case: O(n^2) - When the array is in random order (multiple passes needed).
 // Worst Case: O(n^2) - When the array is in reverse order (maximum swaps and comparisons).
