@@ -8,6 +8,10 @@ Welcome to **Just_Javascript** — my personal space for consistent, hands-on Ja
 ---
 
 ## 📁 Folder Structure
+- Asynchronus_JS/
+  - Async.js
+  - Callback.js
+  - Promises.js
 - Increment-Decrement/
   - Inc-Dec.js
 - Regular_Expression/
