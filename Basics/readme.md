@@ -1,4 +1,4 @@
-# 🚀 JavaScript Practice Set #1
+`# 🚀 JavaScript Practice Set #1
 ## 📚 Topic: Variables, Data Types, `typeof`, Console (Very Basic)
 
 > **Difficulty:** 🟢 Beginner  
@@ -431,3 +431,629 @@ Never memorize JavaScript type coercion. Learn the rules so you can predict any 
 | "abc"     | NaN           |
 
 ---
+# 🚀 JavaScript Practice Set #3
+## 📚 Topic: Operators (Arithmetic, Assignment, Comparison, Unary)
+
+> **Difficulty:** 🟢 Beginner → 🟡 Intermediate  
+> **Questions:** 20 (Q41–Q60)  
+> **Goal:** Master JavaScript operators, operator precedence, comparison operators, increment/decrement operators, and interview-favourite concepts like `==`, `===`, `NaN`, and `Object.is()`.
+
+---
+
+## 📌 Instructions
+
+- Predict every output before running the code.
+- Dry run increment (`++`) and decrement (`--`) questions on paper.
+- For comparison operators, identify whether JavaScript performs type coercion.
+- Explain every output in your own words.
+- Practice in VS Code or Browser Console.
+
+---
+
+# 📝 Questions
+
+## Arithmetic Operators
+
+### Q41. Predict the output.
+
+```javascript
+console.log(10 + 5 * 2);
+```
+
+---
+
+### Q42. Predict the output.
+
+```javascript
+console.log((10 + 5) * 2);
+```
+
+---
+
+### Q43. Predict the output.
+
+```javascript
+console.log(20 / 5 + 2);
+```
+
+---
+
+### Q44. Predict the output.
+
+```javascript
+console.log(20 / (5 + 5));
+```
+
+---
+
+### Q45. Predict the output.
+
+```javascript
+console.log(10 % 3);
+```
+
+---
+
+## Unary Operators (`++` / `--`)
+
+### Q46. Predict the output.
+
+```javascript
+let a = 5;
+
+console.log(a++);
+console.log(a);
+```
+
+---
+
+### Q47. Predict the output.
+
+```javascript
+let a = 5;
+
+console.log(++a);
+console.log(a);
+```
+
+---
+
+### Q48. Predict the output.
+
+```javascript
+let a = 5;
+
+console.log(a--);
+console.log(a);
+```
+
+---
+
+### Q49. Predict the output.
+
+```javascript
+let a = 5;
+
+console.log(--a);
+console.log(a);
+```
+
+---
+
+### Q50. ⭐ Interview Favourite
+
+Predict the output.
+
+```javascript
+let a = 5;
+
+console.log(a++ + ++a);
+```
+
+---
+
+## Assignment Operators
+
+### Q51. Predict the output.
+
+```javascript
+let a = 10;
+
+a += 5;
+
+console.log(a);
+```
+
+---
+
+### Q52. Predict the output.
+
+```javascript
+let a = 10;
+
+a -= 3;
+
+console.log(a);
+```
+
+---
+
+### Q53. Predict the output.
+
+```javascript
+let a = 10;
+
+a *= 2;
+
+console.log(a);
+```
+
+---
+
+### Q54. Predict the output.
+
+```javascript
+let a = 20;
+
+a /= 4;
+
+console.log(a);
+```
+
+---
+
+### Q55. Predict the output.
+
+```javascript
+let a = 20;
+
+a %= 6;
+
+console.log(a);
+```
+
+---
+
+## Comparison Operators
+
+### Q56. Predict the output.
+
+```javascript
+console.log(5 == "5");
+```
+
+---
+
+### Q57. Predict the output.
+
+```javascript
+console.log(5 === "5");
+```
+
+---
+
+### Q58. Predict the output.
+
+```javascript
+console.log(null == undefined);
+```
+
+---
+
+### Q59. Predict the output.
+
+```javascript
+console.log(null === undefined);
+```
+
+---
+
+### Q60. ⭐ Interview Favourite
+
+Predict the output.
+
+```javascript
+console.log(NaN == NaN);
+
+console.log(NaN === NaN);
+
+console.log(Object.is(NaN, NaN));
+```
+
+---
+
+# 📖 Bonus Theory
+
+### T1. Difference between:
+
+- `==`
+- `===`
+
+When should each one be used?
+
+---
+
+### T2. Difference between:
+
+- Prefix Increment (`++a`)
+- Postfix Increment (`a++`)
+
+Explain with and without examples.
+
+---
+
+### T3. Why does this return `false`?
+
+```javascript
+NaN == NaN
+```
+
+Explain the reason.
+
+---
+
+### T4. What is Operator Precedence?
+
+Explain with an example.
+
+---
+
+### T5. ⭐ Interview Question
+
+Difference between:
+
+```javascript
+x = x + 1
+```
+
+and
+
+```javascript
+x += 1
+```
+
+Are they internally the same or different?
+
+---
+
+# 🔥 Challenge Question
+
+Predict the output.
+
+```javascript
+let a = 2;
+
+let b = a++ + ++a + a++ + --a;
+
+console.log(a);
+console.log(b);
+```
+
+---
+
+## 💡 Rule
+
+> **Think ➜ Predict ➜ Dry Run ➜ Code ➜ Run ➜ Explain**
+
+Don't memorize JavaScript outputs. Learn how JavaScript evaluates expressions step by step.
+
+---
+
+## 🎯 Learning Objectives
+
+After completing this practice set, you should be able to:
+
+- ✅ Use Arithmetic, Assignment, and Comparison Operators
+- ✅ Differentiate between `==` and `===`
+- ✅ Understand Prefix and Postfix Operators
+- ✅ Understand `NaN` and `Object.is()`
+- ✅ Predict JavaScript operator outputs confidently
+
+---
+
+## ⭐ Quick Interview Facts
+
+- `NaN` is never equal to itself.
+- `Object.is(NaN, NaN)` returns `true`.
+- `==` performs type coercion, `===` does not.
+- `null == undefined` is `true`, but `null === undefined` is `false`.
+- `x += 1` is shorthand for `x = x + 1`.
+
+
+# 🚀 JavaScript Practice Set #4
+
+## 📚 Topic: Control Flow (`if`, `else`, `else if`, `switch`, Ternary Operator)
+
+> **Difficulty:** 🟡 Intermediate  
+> **Questions:** 20 (Q61–Q80)  
+> **Goal:** Learn how JavaScript makes decisions using conditional statements.
+
+---
+
+## 📌 Instructions
+
+- Predict the output before running the code.
+- Focus on understanding the flow of execution.
+- Practice writing conditions on your own.
+- Explain *why* a particular block executes.
+
+---
+
+# 📝 Questions
+
+### Q61. Write a program to check if a number is positive.
+
+---
+
+### Q62. Write a program to check if a person is eligible to vote.
+
+**Condition:** `age >= 18`
+
+---
+
+### Q63. Predict the output.
+
+```javascript
+let age = 17;
+
+if (age >= 18) {
+    console.log("Adult");
+}
+
+console.log("Done");
+```
+
+---
+
+### Q64. Predict the output.
+
+```javascript
+if (true) {
+    console.log("JavaScript");
+}
+```
+
+---
+
+### Q65. Predict the output.
+
+```javascript
+if (false) {
+    console.log("Hello");
+}
+
+console.log("World");
+```
+
+---
+
+### Q66. Write a program to check whether a number is Even or Odd.
+
+---
+
+### Q67. Write a program to find the greater number between two numbers.
+
+---
+
+### Q68. Predict the output.
+
+```javascript
+let marks = 80;
+
+if (marks >= 40) {
+    console.log("Pass");
+} else {
+    console.log("Fail");
+}
+```
+
+---
+
+### Q69. Predict the output.
+
+```javascript
+let num = -5;
+
+if (num > 0) {
+    console.log("Positive");
+} else {
+    console.log("Negative");
+}
+```
+
+---
+
+### Q70. ⭐ Interview Favourite
+
+Predict the output.
+
+```javascript
+if ("") {
+    console.log("A");
+} else {
+    console.log("B");
+}
+```
+
+---
+
+### Q71. Write a program to print grades.
+
+| Marks | Grade |
+|-------:|:-----:|
+| 90+ | A |
+| 80+ | B |
+| 70+ | C |
+| 60+ | D |
+| Below 60 | Fail |
+
+---
+
+### Q72. Predict the output.
+
+```javascript
+let marks = 91;
+
+if (marks >= 90) {
+    console.log("A");
+}
+else if (marks >= 80) {
+    console.log("B");
+}
+else {
+    console.log("Fail");
+}
+```
+
+---
+
+### Q73. Predict the output.
+
+```javascript
+let marks = 75;
+
+if (marks >= 90) {
+    console.log("A");
+}
+else if (marks >= 80) {
+    console.log("B");
+}
+else if (marks >= 70) {
+    console.log("C");
+}
+else {
+    console.log("Fail");
+}
+```
+
+---
+
+### Q74. ⭐ Interview Question
+
+Find the output.
+
+```javascript
+let age = 20;
+
+if (age > 18) {
+    console.log("Adult");
+}
+else if (age == 18) {
+    console.log("Exactly 18");
+}
+```
+
+---
+
+### Q75. Write a program to find the largest among three numbers.
+
+---
+
+### Q76. Predict the output.
+
+```javascript
+let day = 2;
+
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+
+    case 2:
+        console.log("Tuesday");
+        break;
+
+    default:
+        console.log("Invalid");
+}
+```
+
+---
+
+### Q77. Predict the output.
+
+```javascript
+let day = 3;
+
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+
+    case 2:
+        console.log("Tuesday");
+        break;
+
+    default:
+        console.log("Invalid");
+}
+```
+
+---
+
+### Q78. ⭐ Fall Through
+
+Predict the output.
+
+```javascript
+let x = 1;
+
+switch (x) {
+    case 1:
+        console.log("One");
+
+    case 2:
+        console.log("Two");
+
+    default:
+        console.log("Done");
+}
+```
+
+---
+
+### Q79. Write a `switch` program for:
+
+- `1 → January`
+- `2 → February`
+- `3 → March`
+- Default → `Invalid Month`
+
+---
+
+### Q80. ⭐ Interview Favourite
+
+Convert this into a **Ternary Operator**.
+
+```javascript
+let age = 20;
+
+if (age >= 18) {
+    console.log("Eligible");
+}
+else {
+    console.log("Not Eligible");
+}
+```
+
+---
+
+## 🎯 Learning Objectives
+
+After completing this practice set, you should be able to:
+
+- ✅ Use `if`, `else`, `else if`, and `switch`
+- ✅ Write conditions using comparison operators
+- ✅ Use the ternary operator
+- ✅ Predict conditional outputs
+- ✅ Understand JavaScript control flow
+
+---
+
+## ⭐ Quick Interview Facts
+
+- `if` executes only when the condition is **truthy**.
+- `switch` is best for multiple fixed values.
+- Missing `break` causes **Fall Through**.
+- Ternary operator is a shorthand for simple `if...else`.
+- JavaScript automatically converts conditions to `true` or `false`.`
