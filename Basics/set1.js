@@ -1,7 +1,7 @@
 // Topic: Variables, Data Types, typeof, Console (Very Basic)
 
 // Q1: Difference between var, let, and const.
-// ANS: 
+// ANS:
 // var
 // Function scoped
 // Can be redeclared and reassigned
@@ -33,7 +33,7 @@
 // Q5 : Predict the output.
 // let a = 10;
 // console.log(a);
-// ANS: 10 
+// ANS: 10
 
 // Q6 : Predict the output.
 // let a = 10;
@@ -62,7 +62,7 @@
 // let a = 5;
 // let a = 10;
 // console.log(a);
-// ANS : Uncaught SyntaxError: Identifier 'a' has already been declared 
+// ANS : Uncaught SyntaxError: Identifier 'a' has already been declared
 
 // Q11: Write code to print your:
 // Name
@@ -70,7 +70,7 @@
 // City
 // using console.log().
 
-// ANS: 
+// ANS:
 // let Name = 'Khushi Sharma';
 // let Age = 20;
 // let City = "Lucknow";
@@ -91,7 +91,7 @@
 // Q16 Output? typeof null
 // ANS :Object
 
-// Q17 Output? 
+// Q17 Output?
 // let a; console.log(a);
 // ANS: undefined
 

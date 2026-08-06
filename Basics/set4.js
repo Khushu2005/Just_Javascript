@@ -9,7 +9,7 @@
 // if(num>=0) console.log("Positive")
 // if (num < 0) console.log("Negative");
 
- 
+
 // Q62. Write a program to check if a person is eligible to vote.
 // Condition:age >= 18
 // ANS: 
@@ -220,14 +220,14 @@ if ("") {
 // Default → Invalid Month
 
 let month = 10;
-switch(month){
+switch (month) {
     case 1:
         console.log("January");
         break;
-     case 2:
+    case 2:
         console.log("February");
         break;
-     case 3:
+    case 3:
         console.log("March");
         break;
     default:
@@ -261,21 +261,21 @@ age >= 18
 // ANS: Fall Through in switch ek k baad ek case continously chlna bina break k
 
 // T3. Difference between:
-// if (condition) 
+// if (condition)
 // ANS:JavaScript automatically converts the condition into a boolean value.
 
-// if (Boolean(condition)) 
+// if (Boolean(condition))
 // ANS: The conversion is done explicitly by the developer.
 // Both behave the same; the difference is that one is implicit and the other is explicit.
 
 // T4. ⭐ Interview Question
-// Which values make an if condition execute? 
+// Which values make an if condition execute?
 // ANS: An if condition executes whenever the condition evaluates to a truthy value.
 // It does not execute for falsy values.
 // Explain Truthy and Falsy values with examples.
 // ANS:
 // truthy values:  Any value that converts to true.
-// falsy values are some like 0 false , "" etc which are empty or either zero 
+// falsy values are some like 0 false , "" etc which are empty or either zero
 // we can check the truthy and falsy nature with (!!)this mark for exmaple : !!0n
 
 

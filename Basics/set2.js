@@ -1,10 +1,10 @@
 // // Topic: Type Conversion & Type Coercion (Interview Favourite)
 
-// // Q21 Predict the output. 
+// // Q21 Predict the output.
 // console.log("5" + 2);
 // // ANS :'52' string
 
-// // Q22 
+// // Q22
 // console.log("5" - 2);
 // // ANS : 3 number
 
@@ -46,7 +46,7 @@
 
 // // Q32
 // console.log("5" + null);
-// // ANS : 5null (concatenation) 
+// // ANS : 5null (concatenation)
 
 // // Q33
 // console.log("5" + undefined);
@@ -54,18 +54,18 @@
 
 // // Q34
 // console.log(null + 1);
-// console.log(Number(null)); // 0 ayega 
+// console.log(Number(null)); // 0 ayega
 // // ANS: 1 (yaha null number me convert hota hai i.e., 0 then 0+1=1)
 
 // // Q35
 // console.log(undefined + 1);
-// console.log(Number(undefined)) NaN ata hai 
+// console.log(Number(undefined)) NaN ata hai
 // // ANS : Nan  ( so NaN + 1 ofc Nan)
 
 // // Q36
 // // Predict the output.
 // console.log(Number("123"));
-// // ANS:123 number 
+// // ANS:123 number
 
 // // Q37
 // console.log(Number("123abc"));
@@ -74,15 +74,15 @@
 
 // // Q38
 // console.log(String(123));
-// // ANS:'123' string 
+// // ANS:'123' string
 
 // // Q39
 // console.log(Boolean(""));
-// // ANS: false (bina space k false ) 
+// // ANS: false (bina space k false )
 
-// Q40 ⭐ (Mini Interview)  yaha pr falsy and truthy nature dekha ja rha hai 
+// Q40 ⭐ (Mini Interview)  yaha pr falsy and truthy nature dekha ja rha hai
 // Predict the output.
-// console.log(Boolean(" ")); (true : beech me space h) 
+// console.log(Boolean(" ")); (true : beech me space h)
 // console.log(Boolean("0"));  (true: 0 as an string truthy value hai )
 // console.log(Boolean(0));  (false : 0 ek falsy value hai )
 // console.log(Boolean(1));  (true : 1 ek truthy value hai )
@@ -92,7 +92,7 @@
 
 // imp : JavaScript me saare objects truthy hote hain, chahe wo empty hi kyu na hon.
 
-// FALSY VALUES 
+// FALSY VALUES
 // false
 // 0
 // -0
@@ -109,9 +109,9 @@
 // Implicit Type Conversion
 // Explicit Type Conversion
 
-// ANS : 
+// ANS :
 // Implicit Type Conversion :It is done by javascript internally in order to perform calculation in the best value possible converts the data of either operand
-//  Explicit Type Conversion : It is done by developer externally by using functions like Number(), String(), etc 
+//  Explicit Type Conversion : It is done by developer externally by using functions like Number(), String(), etc
 
 // T2. // List all Falsy Values in JavaScript.
 // ANS : 0,-0,false,"",null,undefined,NaN,Document.all,0n=>BigInt (age 1n hota to truthy  hota hai )
@@ -134,6 +134,6 @@
 // parseInt("25px")    // 25
 // parseInt("abc25")   // NaN
 
-// parseFloat(): Converts a string to a floating-point number. 
+// parseFloat(): Converts a string to a floating-point number.
 // parseFloat("10.9")   // 10.9
 // parseFloat("25.5px") // 25.5

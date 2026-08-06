@@ -8,7 +8,7 @@ console.dir(h1)
 let a = document.querySelector("a")
 console.log(`${a.getAttribute("href")}`)
 
-a.setAttribute("href","https://unsplash.com/")
+a.setAttribute("href", "https://unsplash.com/")
 
 a.removeAttribute("href")
 
