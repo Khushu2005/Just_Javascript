@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling & Capturing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background: #282e30;
+        }
+
+        .A {
+            width: 800px;
+            height: 700px;
+            background: #39b31a;
+        }
+
+        .B {
+            width: 600px;
+            height: 600px;
+            background: #ae2828;
+        }
+
+        .C {
+            width: 400px;
+            height: 500px;
+            background: #43429f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="A">A
+        <div class="B">B
+            <div class="C">C
+            </div>
+        </div>
+    </div>
+
+    <script src="Event_Bubbling&Capturing.js"></script>
+</body>
+
+</html>

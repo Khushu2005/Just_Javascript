@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form {
+            width: 350px;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        .field {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #333;
+        }
+
+        .message {
+            font-size: 0.9rem;
+            text-align: center;
+            padding-bottom: 1rem;
+            color: crimson;
+            display: none;
+
+        }
+
+        .error {
+            display: none;
+            margin-top: 5px;
+            font-size: 12px;
+            color: red;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #222;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="field">
+            <label for="email">Email</label>
+            <input minlength="17ch" autocomplete="off" type="email" name="email" id="email" placeholder="Enter your email">
+            <span class="error" id="emailerror">Please enter a valid email</span>
+        </div>
+
+        <div class="field">
+            <label for="password">Password</label>
+            <input  type="password" name="password" id="password" placeholder="Enter your password">
+            <span class="error" id="passworderror">Password must be at least 8 characters</span>
+        </div>
+        <div class="message">Everything is correct!</div>
+
+        <button type="submit">Login</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

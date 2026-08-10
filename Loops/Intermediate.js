@@ -216,23 +216,26 @@
 
 // Q59 ⭐⭐⭐⭐ (Interview Favourite)
 // Print all Prime numbers between 1 and 100.
-let isPrime = true;
-for (let i = 1; i < 101; i++) {
-    if (i === 0 || i === 1) isPrime = false;
-    if (i === 2) {
-        isPrime = true;
-        console.log(2)
-    }
-    if (i > 2) {
-        for (let j = 2; j < i; j++) {
-            if (i % j !== 0) {
-                console.log(i)
-            }
 
-        }
+// let num = 2
+// while (num < 101) {
+//     let isprime = true;
+//     let i = 2;
+//     while (i < num) {
+//         if (num % i === 0) {
+//             isprime = false
+//             break;
+//         }
+//         i++
+//     }
+//     if (isprime) {
+//         console.log(num)
+//     }
+//     num++
+// }
 
-    }        
-}
+
+
 
 // Q60 ⭐⭐⭐⭐
 // Generate the first 10 Fibonacci numbers.
@@ -247,58 +250,60 @@ for (let i = 1; i < 101; i++) {
 // 13
 // 21
 // 34
+let previous = 1
+let previousPrevious = 0;
+let current = 0
+let count = 0;
+
+while (count <= 10) {
+    let current = previous + previousPrevious
+
+    console.log(current)
+
+    previousPrevious = previous;
+    previous = current
+
+    count++
+}
 
 
 // 🎯 Bonus Theory
 // T1 ⭐⭐⭐
-
-// Difference between:
-
-// break
-// continue
-
-// Explain with your own examples.
+// Difference between:break,continue:with your own examples.
+// BREAK: break is used to stop the loop at particular condition 
+// CONTINUE: continue is used to skip the particluar condition and move forward 
 
 // T2 ⭐⭐⭐
-
 // What happens if continue is used before the update inside a while loop?
-
 // Hint:
-
 // while (condition) {
-
 //     if (...)
 //         continue;
-
 //     i++;
 // }
+// ANS:  it skips the particular value before updating 
+
 // T3 ⭐⭐⭐
-
 // Can break terminate:
-
-// for
-// while
-// do...while
-// switch
-
-// Explain.
+// for : Yes
+// while : Yes
+// do...while :Yes
+// switch :Yes ,
+// Explain.: break current loop ya switch statement ko immediately terminate kar deta hai. Uske baad control loop ya switch ke bahar chala jata hai.
 
 // T4 ⭐⭐⭐⭐
-
 // Which is more efficient for checking Prime?
-
 // for(i=2;i<num;i++)
-
 // or
-
 // for(i=2;i<=Math.sqrt(num);i++)
-
 // Why?
+ 
+// for(i=2;i<num;i++) is usully checks one digit before the number
+// for(i=2;i<=Math.sqrt(num);i++) it checks only till the squareroot which is smallest  of the whole number as it is only possible that any number can be divided by any other until its squareroot and it is more optimized
+
 
 // T5 ⭐⭐⭐⭐
-
 // What is the time complexity of:
-
 // Printing numbers from 1 to n
 // Finding factorial
 // Counting digits
